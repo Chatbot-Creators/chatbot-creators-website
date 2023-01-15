@@ -121,6 +121,7 @@ function startApp() {
     })
 
     app.use(express.static(path.join(__dirname, 'static')))
+    app.use(express.static(path.join(__dirname, 'static'),{index:false,extensions:['html']}));
 
     app.listen(port, function () {
         console.log('Server started at http://localhost:' + port);
