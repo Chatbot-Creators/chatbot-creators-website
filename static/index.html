@@ -5,77 +5,301 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Chatbot Service</title>
+  <title>Chatbot Creators</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <nav class = "main-menu">
+  <nav class="main-menu">
     <input type ="checkbox" id="check">
-    <label for ="check" class="checkbtn">
+    <label for="check" class="checkbtn">
       <i class="fa fa-bars"></i>
     </label>
-    <label class="logo">SHMYAK</label>
-      <ul>
-        <li><a class = "active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contact</a></li>
-       
+    <label class="logo">Chatbot Creators</label>
+      <ul class="open" id="top-menu">
+        <li><a class="scrollto" id="link" href="#main-view">Главная</a></li>
+        <li><a class="scrollto" id="link" href="#howwework" >как мы работаем</a></li>
+        <li><a class="scrollto" id="link" href="#benefits">Преимущества</a></li>
+        <li><a class="scrollto" id="link" href="#field">Применение</a></li>
+        <li><a class="scrollto" id="link" href="#tech">Технологии</a></li>
+        <li><a class="scrollto" id="link" href="#feedback">Связь</a></li>
       </ul>
   </nav>
 
-  <section class ="page-section hero-section">
+  <section class="anchor page-section hero-section" id="main-view">
     <div class = "hero-img"> </div>
     <div class = "hero-content">
       <h1>
-        Проект по созданию чат-ботов
+        Автоматизируйте свои бизнес-процессы 
       </h1>
       <p>
-        Текст
+        с помощью виртуального помощника на базе искусственного интеллекта
       </p>
       <div class="control">
-        <button class="btn-primary" id="start-btn">клац</button>
+        <a href="#feedback" class="btn btn-primary scrollto" id="start-btn">Заказать чат-бот</a>
       </div>
     </div>  
   </section>
 
-  <section class ="page-section about-us promo">
-    <h2>Команда студентов</h2>
-    <p>Текст</p>
-    <div class="services">
-      <div class="services-card">
-        <img src="sh.jpg" alt="">
-        <h3>Дмитрий</h3>
-        <p>текст</p>
-      
+  
+  <section class="anchor page-section stages" id="howwework">
+    <h2 class="ttl">Как мы работаем?</h2>  
+    <p>Работа нашей компании организована в шесть последовательных 
+      этапов взаимодействия с заказчиком, это позволяет гарантировать качественный результат</p>
+    <div class="stepper d-flex flex-column mt-5 ml-2">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Обращение клиента</h5>
+          <p class="lead text-muted pb-3">Заказчик обращается к нашей платформе для заказа собственного чат-бота</p>
+        </div>
       </div>
-      <div class="services-card">
-        <img src="ya2.jpg" alt="">
-        <h3>Михаил</h3>
-        <p>текст</p>
-      
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Анализ заказа</h5>
+          <p class="lead text-muted pb-3">Мы проводим бесплатную консультацию с заказчиком, анализируя
+            конкретную ситуацию и конкурентоспособность создаваемого чат-бота,
+            выделяя особенности и условия заказа, готовя способы реализации</p>
+        </div>
       </div>
-      <div class="services-card">
-        <img src="k.jpg" alt="">
-        <h3>Самир</h3>
-        <p>текст</p>
-       
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Подготовка прототипа</h5>
+          <p class="lead text-muted pb-3">При согласии клиента на создание чат-бота, в течение некоторого времени
+            готовится прототип чат-бота (функциональные возможности, сценарии
+            работы бота, макет)</p>
+        </div>
       </div>
-      <div class="services-card">
-        <img src="m.jpg" alt="">
-        <h3>Сергей</h3>
-        <p></p>
-    
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">4</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Разработка чат-бота</h5>
+          <p class="lead text-muted pb-3">Производится разработка чат-бота, работающего на базе ИИ и машинного
+            обучения, под конкретные условия заказчика</p>
+        </div>
+      </div class="work-content">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">5</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Интеграция и развертывание</h5>
+          <p class="lead text-muted pb-3">Завершаются операции по тестированию чат-бота. Производится интеграция
+            чат-бота в проект заказчика</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">6</div>
+          <div class="line h-100 d-none"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Поддержка</h5>
+          <p class="lead text-muted pb-3">Заказчик получает доступ к базовому управлению чат-ботом, статистикой и
+            поддержкой 24/7 со стороны платформы</p>
+        </div>
       </div>
     </div>
   </section>
-  <section class="page-section contact-section">
+
+  
+  <section class ="anchor page-section promo" id="benefits">
+    <h2 class="ttl">Наши преимущества</h2>  
+    <div class = "boxes">
+      <div class="box">
+        <h2>01</h2>
+        <h3>Удобство интеграции</h3>
+        <p>Созданный чат-бот может быть легко развернут на собственном сервере заказчика или на нашем облачном решении. Также мы поддерживаем интеграцию в популярные социальные сети и мессенджеры
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>02</h2>
+        <h3>Простота управления</h3>
+        <p>Вы получите индивидуальную панель управления, с помощью которой будет возможна эффективная дополнительная настройка чат-бота под ваши требования
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>03</h2>
+        <h3>Детальная статистика</h3>
+        <p>Формируемые нами данные позволят Вам оценить эффективность чат-бота для Вашего бизнеса. Статистика позволяет отслеживать производительность Вашего чат-бота в режиме реального времени.</p>
+      </div>
+
+      <div class="box">
+        <h2>04</h2>
+        <h3>Удобство общения с чат-ботом</h3>
+        <p>Мы используем возможности машинного обучения для того, чтобы созданный для Вас чат-бот был способен понять потребности клиентов и предоставить им правильный ответ за считанные секунды. Кроме этого, чат-бот способен сохранять контекст разговора, удерживая внимание.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>05</h2>
+        <h3>Доступность</h3>
+        <p>Создаваемый чат-бот адаптирован под разные устройства и подходит пользователям с нарушениями зрения, позволяя программам чтения с экрана легко воспринимать доступную информацию
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>06</h2>
+        <h3>Поддержка</h3>
+        <p>Чат-бот может общаться с клиентом на его родном языке, благодаря поддержке нескольких языков. На данный момент мы поддерживаем несколько языков: английский, русский, немецкий, французский, португальский. 
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>07</h2>
+        <h3>Принятие заказов и осуществление платежей</h3>
+        <p>Чат-бот может общаться с клиентом на его родном языке, благодаря поддержке нескольких языков. На данный момент мы поддерживаем несколько языков: английский, русский, немецкий, французский, португальский. 
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>08</h2>
+        <h3>Сбор отзывов</h3>
+        <p>С созданием чат-бота у вас появится возможность записывать отзывы клиентов и автоматически собирать статистику по ним. Это поможет оценить эффективность работы Вашего бизнеса.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class ="anchor page-section promo" id="field">
+    <h2 class="ttl">Сферы применения</h2>  
+    <div class = "boxes">
+      <div class="fields">
+        <div class="field-img" id="field-img1"> </div> 
+        <h4>Улучшение взаимодействия пациентов и врачей. Наше решение позволит медицинским учреждениям</h4>
+        <p>
+          <ul>
+          <li>● Осуществление записи на прием к врачу (с
+          возможностью напоминания)</li>
+          <li>● Сбор отзывов о посещении врача и качества оказания медицинской помощи</li>
+          <li>● Настраиваемый периодический анализ самочувствия пациента</li>
+          <li>● Выдача ответов на часто задаваемые вопросы</li>
+          <li>● Проверка наличия лекарств</li>
+          <li>● Взаимодействие с консультантом напрямую посредством чат-бота</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="fields">
+        <div class="field-img" id="field-img2"> </div> 
+        <h4>Обеспечение ускорения работы финансовых и страховых учреждений с целью удержания клиентов.</h4>
+        <ul>
+        <li>● Получение информации об услугах, предоставляемых компанией</li>
+        <li>● Получение справочной информации в финансовой и страховой сфере</li>
+        <li>● Возможность разговора с оператором в интерфейсе чат-бота</li>
+          <li>● Получение актуальной информации для клиента (курс валют, информацию о вкладе и т.п.)</li>
+            <li>● Запись информации о страховых случаях и автоматическая передача их компании</li>
+              <li>● Настраиваемое автоматические уведомления для клиентов</li>
+      </ul>
+      </div>
+
+      <div class="fields">
+        <div class="field-img" id="field-img3"> </div> 
+        <h4>Максимизация ваших онлайн-продаж и повышение качества обслуживания в интернет-магазинах.</h4>
+        <ul>
+          <li>● Получение регулярных обновлений о статусе своих поставок и заказов через виртуального помощника</li>
+          <li>● Мгновенное отслеживание заказов на отгрузку, ориентировочного время доставки и информации о грузе</li>
+          <li>● Автоматическое оповещение клиентов о статусе доставки, акциях, скидках</li>
+          <li>● Проверка наличия товара</li>
+          <li>● Оплата заказа через интерфейс чат-бота</li>
+          <li>● Настраиваемый умный подбор товара в зависимости от желания и условий клиента</li>
+          <li>● Сбор отзывов от клиентов</li>
+          </ul>
+        </div>
+
+      <div class="fields">
+        <div class="field-img" id="field-img4"> </div> 
+        <h4>Возможность взаимодействовать с клиентами, обеспечивая своевременное и дружелюбное обслуживание клиентов.</h4>
+        <ul>
+        <li>● Осуществление бронирования (например, билеты, места в отеле)</li>
+        <li>● Подбор необходимого транспорта для выстраивания маршрута поездки</li>
+        <li>● Проверка расписания транспорта</li>
+        <li>● Сбор отзывов о поездке</li>
+        <li>● Возможность разговора с оператором в интерфейсе чат-бота</li>
+        <li>● Оплата поездки через интерфейс чат-бота</li>
+        <li>● Консультирование клиента о месте поездки</li>
+        <li>● Автоматические уведомления для пользователя (напоминание о выезде, информация об акциях)</li>
+        </ul>
+      </div>
+
+  </section>
+
+  <section class ="anchor page-section promo" id="tech">
+    <h2 class="ttl">Используемые нами технологии</h2>  
+    <div class = "boxes-alt" >
+
+      <div class="tech-box" id="one">
+        
+        <h3>Python</h3>
+        <p>Язык программирования, ориентированный под использование машинного обучения</p>
+      </div>
+
+      <div class="tech-box" id="two">
+       
+        <h3>Scikit-learn</h3>
+        <p>Библиотека машинного обучения Python, позволяющая решать большой спектр основных
+          задач машинного обучения</p>
+      </div>
+
+      <div class="tech-box" id="three">
+        
+        <h3>Tensorflow</h3>
+        <p>Библиотека для численных вычислений и крупномасштабного машинного обучения
+        </p>
+      </div>
+
+      <div class="tech-box" id="four">
+        <h3>SpaCy</h3>
+        <p>Библиотека на Python для расширенной обработки естественного языка
+        </p>
+      </div>
+
+      <div class="tech-box" id="five">
+        
+        <h3>Node.js</h3>
+        <p>Платформа для создания веб-серверов, предоставляющий возможность легкого масштабирования среды
+        </p>
+      </div>
+
+      <div class="tech-box" id="six">
+        <h3>PostgreSQL</h3>
+        <p>Современная и надежная технология для хранения данных
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="anchor page-section" id="price">
+    <h2 class="ttl">Стоимость и сроки разработки</h2>  
+    <p>Наша компания не только создает чат-ботов на заказ, но и осуществляет техническую поддержку.
+      Сроки и стоимость предоставления готового решения и технической поддержки обсуждаются с заказчиком индивидуально</p>
+    </section>
+
+  <section class="anchor page-section contact-section" id="feedback">
     <div class="container">
       <div class="text">Свяжитесь с нами</div>
       <form action="#" id="order-form">
@@ -126,5 +350,5 @@
 <!--<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">--!>
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
     

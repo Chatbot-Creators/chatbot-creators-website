@@ -18,3 +18,8 @@
     margin: auto;
     margin-top: 1rem;
 }
+
+td {
+    word-wrap: break-word;
+    max-width: 300px;
+}

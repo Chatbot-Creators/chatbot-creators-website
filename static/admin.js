@@ -4,15 +4,14 @@ const domain = ''
 const loginPage = /* html */`
 <form class="login-form" onsubmit="loginSubmit(event)">
   <div>
-    <label for="login" class="form-label">Login</label>
+    <label for="login" class="form-label">Имя</label>
     <input type="text" class="form-control" id="login" aria-describedby="loginHelp" name="login">
-    <div id="loginHelp" class="form-text">We'll never share your login with anyone else.</div>
   </div>
   <div>
-    <label for="password" class="form-label">Password</label>
+    <label for="password" class="form-label">Пароль</label>
     <input type="password" class="form-control" id="password" name="password">
   </div>
-  <button type="submit" class="btn btn-primary btn-login">Login</button>
+  <button type="submit" class="btn btn-primary btn-login">Войти в панель управления</button>
 </form>`
 
 function ordersPage(orders = []) {
@@ -20,12 +19,12 @@ function ordersPage(orders = []) {
     <table class="table">
     <thead>
       <tr>
-        <th scope="col">Id</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Phone</th>
+        <th scope="col">ID</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Телефон</th>
         <th scope="col">Email</th>
-        <th scope="col">Message</th>
+        <th scope="col">Сообщение</th>
       </tr>
     </thead>
     <tbody>
